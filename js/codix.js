@@ -79,4 +79,4 @@ Codix.Line = function () {
 var codix = new Codix.World();
 
 // Start animation (Later versions with cross-browser)
-//codix.start();
+codix.start();
