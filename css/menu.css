@@ -31,7 +31,7 @@ body {
 }
 
 a {
-	color: #c2575b;
+	color: #33AAFF;
 	text-decoration: none;
 
 	-webkit-transition: 0.15s color ease;
@@ -51,15 +51,23 @@ h2 {
 
 .meny {
 	display: none;
-	padding: 20px;
+	padding: 60px 20px;
 	overflow: auto;
 	background: #333;
 	color: #eee;
+        
+        text-align: center;
 
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
+
+.meny a {
+    margin-right: 50px;
+    font-size: 30px;
+}
+
 	.meny ul {
 		margin-top: 10px;
 	}
