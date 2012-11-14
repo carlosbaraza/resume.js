@@ -1,3 +1,31 @@
+/*  Add the next tags to enable Three.JS
+ * 
+        <!-- Require.JS for includes in Main.js -->
+        <script type="text/javascript" src="vendor/require.js"></script>
+        
+        <script type="text/javascript" src="vendor/three.js.git/build/three.js"></script>
+        
+        <!-- Include the Detector for WebGL -->
+        <script type="text/javascript" src="vendor\three.js.git\examples\js/Detector.js"></script>
+        
+        <!-- Add stats to the scene -->
+        <script type="text/javascript" src="vendor/stats.js.git/build/stats.min.js"></script>
+        
+        <!-- Add trackball control -->
+        <script type="text/javascript" src="vendor/three.js.git/examples/js/controls/TrackballControls.js"></script>
+        
+        <!-- Add window resize of threex.js -->
+        <script type="text/javascript" src="vendor/threex.git/THREEx.WindowResize.js"></script>
+        
+        <!-- Add GUI.DAT -->
+        <script type="text/javascript" src="vendor/dat.gui.js"></script>
+        
+        <!-- <script type="text/javascript" src="js/three.js"></script> -->
+ * 
+ * 
+ */
+
+
 var container, renderer, stats;
 var scene;
 var camera;
