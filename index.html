@@ -5,10 +5,148 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>resume.js</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!-- CSS Main view -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <!-- CSS for reveal.js -->
+        <link rel="stylesheet" href="vendor/reveal.js.git/css/reveal.css">
+        <link rel="stylesheet" href="vendor/reveal.js.git/css/theme/default.css" id="theme">
+
+        <!-- CSS for Menu (Meny.js) -->
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="vendor/reveal.js.git/lib/css/zenburn.css">
+        
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="meny">
+            <a href="#" onclick="resume.goToView('main'); meny.close();">Main</a>
+            <a href="#" onclick="resume.goToView('slides'); meny.close();">Slides</a>
+        </div>
+        <div class="contents">
+            <div class="mainView current">
+                <div class="playContainer">
+                    <div class="playBtn"></div>
+                    <img src="img/avatar_only.png" class="myAvatar">
+                </div>
+            </div>
+
+            <div class="reveal">
+
+                    <!-- Any section element inside of this container is displayed as a slide -->
+                    <div class="slides">
+
+                            <section>
+                                    <h1>Resume.js</h1>
+                                    <h3>Cool resume for a cool world</h3>
+                                    <p>
+                                            <small>Created by <a href="http://www.carlosbaraza.com">Carlos Baraza</a> / <a href="http://twitter.com/carlosbaraza">@carlosbaraza</a></small>
+                                    </p>
+                            </section>
+
+                            <section>
+                                    <h2>Heads Up</h2>
+                                    <p>
+                                            reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+                                            support for CSS 3D transforms to see it in its full glory.
+                                    </p>
+
+                                    <aside class="notes">
+                                            Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                                    </aside>
+                            </section>
+                        
+                    </div>
+
+            </div>
+           
+        </div>
+        
+
+       
+        <!-- jquery.1.8.2.min.js -->
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.transit.js"></script>
+        
+        <script src="vendor/reveal.js.git/lib/js/head.min.js"></script>
+        <script src="vendor/reveal.js.git/js/reveal.min.js"></script>
+
+        <script>
+
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                        controls: true,
+                        progress: true,
+                        history: true,
+                        center: true,
+
+                        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+                        // Optional libraries used to extend on reveal.js
+                        dependencies: [
+                                { src: 'vendor/reveal.js.git/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                                { src: 'vendor/reveal.js.git/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                { src: 'vendor/reveal.js.git/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                { src: 'vendor/reveal.js.git/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                                { src: 'vendor/reveal.js.git/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                                { src: 'vendor/reveal.js.git/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        ]
+                });
+
+        </script>
+        
+        <!-- Add Meny Menu -->
+        <script type="text/javascript" src="vendor/Meny.git/js/meny.js"></script>
+        <script>
+            var meny = Meny.create({
+                // The element that will be animated in from off screen
+                menuElement: document.querySelector( '.meny' ),
+
+                // The contents that gets pushed aside while Meny is active
+                contentsElement: document.querySelector( '.contents' ),
+
+                // The alignment of the menu (top/right/bottom/left)
+                position: 'bottom',
+
+                // The height of the menu (when using top/bottom position)
+                height: 200,
+
+                // The width of the menu (when using left/right position)
+                width: 260
+            });
+        </script>
+        
+        <!-- Require.JS for includes in Main.js -->
+        <script type="text/javascript" src="vendor/require.js"></script>
+        
+        <script type="text/javascript" src="vendor/three.js.git/build/three.js"></script>
+        
+        <!-- Include the Detector for WebGL -->
+        <script type="text/javascript" src="vendor\three.js.git\examples\js/Detector.js"></script>
+        
+        <!-- Add stats to the scene -->
+        <script type="text/javascript" src="vendor/stats.js.git/build/stats.min.js"></script>
+        
+        <!-- Add trackball control -->
+        <script type="text/javascript" src="vendor/three.js.git/examples/js/controls/TrackballControls.js"></script>
+        
+        <!-- Add window resize of threex.js -->
+        <script type="text/javascript" src="vendor/threex.git/THREEx.WindowResize.js"></script>
+        
+        <!-- Add GUI.DAT -->
+        <script type="text/javascript" src="vendor/dat.gui.js"></script>
+        
+        <!-- <script type="text/javascript" src="js/three.js"></script> -->
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/codix.js"></script>
+        
     </body>
 </html>
