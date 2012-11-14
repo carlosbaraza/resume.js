@@ -11,10 +11,12 @@ Resume.prototype.goToView = function( viewToGo ) {
 
     if ( viewToGo == 'main' ){
         $('.mainView').addClass('current');
+        this.currentView = 'main';
     }
 
-    if ( viewToGo == 'slides' ){
+    if ( viewToGo == 'awesomeSlides' ){
         $('.reveal').addClass('current');
+        this.currentView = 'awesomeSlides';
     }
     console.log(this.currentView);
 }
