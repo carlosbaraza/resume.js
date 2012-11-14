@@ -1,12 +1,11 @@
 
-var RESUME = RESUME || {};
+var Resume = Resume || {};
 
-function RESUME() {
+function Resume() {
     this.currentView = 'main';
-    
 }
 
-RESUME.prototype.goToView = function( viewToGo ) {
+Resume.prototype.goToView = function( viewToGo ) {
     $('.reveal').removeClass('current');
     $('.mainView').removeClass('current');
 
@@ -21,5 +20,5 @@ RESUME.prototype.goToView = function( viewToGo ) {
 }
 
 
-var resume = new RESUME();
+var resume = new Resume();
 
