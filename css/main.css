@@ -34,18 +34,28 @@
   background-color: #2b2b2b;
 }
 
+
+.mainView.red {
+	  background: #4586b2;
+	  background: -moz-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+	  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #EFEFEF), color-stop(100%, #4586b2));
+	  background: -webkit-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+	  background: -o-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+	  background: -ms-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+	  background: radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+	  background-color: #2b2b2b;
+}
+
 .mainView.current {
     top: 0;
 }
 
 .playContainer {
-	position: absolute;
-	width: 600px;
-	height: 450px;
-	top: 50%;
-	left: 50%;
-	margin-left: -300px;
-	margin-top: -225px;
+	position: relative;
+	width: 40%;
+	height: 60%;
+	margin: 0 auto;
+	top: 20%;
         z-index: 1;
 }
 
@@ -72,30 +82,27 @@
 
 .myAvatar {
 	position: absolute;
-	top: 50%;
+	height: 100%;
 	left: 50%;
-	margin-left: -147px;
-	margin-top: -240px;
+	margin: 0 0 0 -25%;
+	/*margin-top: -240px;*/
 	z-index: 2;
 	opacity: 1;
+	bottom: 0;
 
-	-webkit-transition: all .50s ease;
-	   -moz-transition: all .50s ease;
-	    -ms-transition: all .50s ease;
-	     -o-transition: all .50s ease;
-	        transition: all .50s ease;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
 	
 }
 
-.playContainer:hover .myAvatar {
-	-webkit-transform: rotateY(30deg) translateZ(50px);
-	   -moz-transform: rotateY(30deg) translateZ(50px);
-	    -ms-transform: rotateY(30deg) translateZ(50px);
-	     -o-transform: rotateY(30deg) translateZ(50px);
-	        transform: rotateY(30deg) translateZ(50px);
-	
-
-	margin-left: -400px !important;
+.myAvatar:hover  {
+	height: 90%;
+	/*top: 5%;*/
+	margin-left: -23%;
+	cursor: pointer;
 }
 
 .reveal {
@@ -177,6 +184,7 @@
 	position: absolute;
 	display: inline-block;
 	top: 0px;
+	font-size: 18px;
 	width: 500px;
 
 	color: #003355;

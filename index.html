@@ -25,10 +25,10 @@ and open the template in the editor.
     </head>
     <body>
         <div class="meny">
-            <a href="#" onclick="resume.goToView('coverLetter'); meny.close();">Cover Letter</a>
-            <a href="#" onclick="resume.goToView('main'); meny.close();">Main</a>
-            <a href="#" onclick="resume.goToView('awesomeSlides'); meny.close();">Slides</a>
-            <a href="#" onclick="resume.goToView('cv'); meny.close();">Resume</a>
+            <a href="#" onclick="resume.goToView('coverLetter'); meny.close(); codix.stop();">Cover Letter</a>
+            <a href="#" onclick="resume.goToView('main'); meny.close(); codix.start();">Main</a>
+            <a href="#" onclick="resume.goToView('awesomeSlides'); meny.close(); codix.stop();">Slides</a>
+            <a href="#" onclick="resume.goToView('cv'); meny.close(); codix.stop();">Resume</a>
         </div>
         <div class="contents">
             
@@ -40,7 +40,115 @@ and open the template in the editor.
             </div>
             
             <div class="cv">
-                
+                <div id="wrapper">
+                    <header>
+                        <h1 class="name">OZAN TUNCA</h1>
+                        <article>
+                            <span class="subhead"> Address:</span>
+                            <div class="item">
+                                Umut Mah. Seyran Sok. 92/12 Seyranbağları/ANKARA/ Turkey<br>
+                                Inner Ring Road, Riverwalk, Block 9 Apartment 23-B, Waterford/ Ireland
+                            </div>
+                        </article>
+                        <article>
+                            <span class="subhead">Phone:</span>
+                            <div class="item">
+                                +90 554 205 02 57 (Turkey)<br>
+                                +353 89 421 74 77 (Ireland)
+                            </div>
+                        </article>
+                        <article>
+                            <span class="subhead">E-mail:</span>
+                            <div class="item">
+                                ozantunca90@gmail.com
+                            </div>
+                        </article>
+                    </header>
+                    <h3>EDUCATION</h3>
+                        <article>
+                        <span class="subhead">2009 – 2014</span>
+                            <div class="item">
+                                <p class="descriptor">Bilkent University, Ankara, Turkey</p>
+                                Computer Technology and Information Systems, <br>
+                                Bachelor of Science,  CGPA: 3.11/4.00
+                            </div>
+                        </article>
+                        <article>
+                        <span class="subhead">2012 Sep – 2013 Jan</span>
+                            <div class="item">
+                                <p class="descriptor">Waterford Institute of Technology, Waterford, Ireland</p>
+                                    Applied Computing (Erasmus)
+                            </div>
+                        </article>
+                    <h3>EXPERIENCE</h3>
+                        <article>
+                        <span class="subhead">Internship</span>
+                            <div class="item">
+                                <p class="descriptor">Noktacom Medya
+                                Web Developer Intern.  Ankara, Turkey <br>June – August 2012</p>
+                                Responsibilities:
+                                 Troubleshooting and rebuilding <a target="_blank" href="http://www.izlesene.com">www.izlesene.com</a>, a high traffic video sharing website in Turkey, using PHP, MySQL, MongoDB. Creating UI for content managers. Rewriting data retrieval API of izlesene.com.
+                            </div>
+                        </article>
+                        <article>
+                        <span class="subhead">Project</span>
+                            <div class="item">
+                                <p class="descriptor">4erasmus.com (Under Construction)</p>
+                                A social network and an information source for students who is planning to for an Erasmus or who is currently Erasmus, and an easy way to organize some events or follow the ones you like.
+                            </div>
+                        </article>
+
+                    <h3>COMPUTER SKILLS</h3>
+                    <h4>Languages</h4>
+                        <article>
+                            <span class="subhead">C/C++ </span> 
+                                <div class="item">STL, Data Structures, Windows API (Moderate), Networking with win32 API and cURL, Qt Framework</div>
+                        </article>
+                        <article>
+                            <span class="subhead">Java</span>   
+                                <div class="item">Data Structures, GUI, 2D Graphics, Multithreading, Networking</div>
+                        </article>
+                        <article>
+                            <span class="subhead">HTML/CSS</span>   
+                                <div class="item">CSS3 and some applied knowledge of HTML5 features and tags</div>
+                        </article>
+                        <article>
+                            <span class="subhead">JavaScript</span> 
+                                <div class="item">Experience with jQuery, AJAX, OOP, JSON</div>
+                        </article>
+                        <article>
+                            <span class="subhead">PHP</span>    
+                                <div class="item">Experience with MySQL, MongoDB, OOP, MVC frameworks, Open Graph API</div>
+                        </article>
+                    <h4>Technologies/Tools</h4>
+                        <article>
+                            <span class="subhead">Databases</span>
+                                <div class="item">Experience with MySQL, Oracle SQL, MongoDB, Sphinx</div>
+                        </article>
+                        <article>
+                            <span class="subhead">Network</span>
+                                <div class="item">CCNA 1 & 2 Courses</div>
+                        </article>
+                        <article>
+                            <span class="subhead">Version Control</span>
+                                <div class="item">Git</div>
+                        </article>
+
+                    <h3>QUALIFICATIONS & ACTIVITIES</h3>
+                        <article>
+                        <span class="subhead">Languages</span>
+                            <div class="item">Turkish (Native),  English (Fluent)</div>
+                        </article>
+                        <article>
+                        <span class="subhead">Activities & Interests</span>
+                            <div class="item">
+                                Kickboxing (Black Belt 1st Dan)<br>
+                                Paragliding (Club Pilot)<br>
+                                Traveling<br>
+                                Voluntary Worker at Solidarites Jeunesses, France, Summer 2011
+                            </div>
+                        </article>
+                </div>
             </div>
             
             <div class="coverLetter">
