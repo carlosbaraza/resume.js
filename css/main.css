@@ -190,7 +190,7 @@ a:hover {
 	top: 0px;
 	font-size: 18px;
 	width: 500px;
-
+	text-rendering: optimizeSpeed;
 	color: #003355;
 
 	-webkit-transform: rotateZ(-90deg);

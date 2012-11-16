@@ -66,6 +66,7 @@ h2 {
 .meny a {
     margin-right: 50px;
     font-size: 30px;
+    font-variant: small-caps;
 }
 
 	.meny ul {
