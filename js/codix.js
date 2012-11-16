@@ -38,6 +38,7 @@ Codix.World = function () {
     this.stop = function () {
         for (var i = 0; i < this.numLines ; i++) {
             this.line[i].stop(); // Start updating
+            this.line[i].updateCallback = {};
         }
     };
 
@@ -74,6 +75,8 @@ Codix.Line = function () {
     this.elementDOM.style.top = this.yPos;    
     this.elementDOM.style.opacity = this.slowness;
     
+    this.updateCallback = {};
+    
     // method: Move line to bottom 
     this.update = function () {
         var that = this;
@@ -83,7 +86,7 @@ Codix.Line = function () {
             { top: "100%", opacity: 0 }
             , this.slowness * 20000 
             ,'in'
-            , function () {
+            , this.updateCallback = function () {
                 if ( !that.isStopped ) {
                     $( that.elementDOM ).css({ top: "-60%", opacity: 1 });
                     that.update();

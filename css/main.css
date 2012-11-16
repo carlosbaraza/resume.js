@@ -6,6 +6,10 @@
         Purpose of the stylesheet follows.
 */
 
+a:hover {
+    text-decoration: none;
+}
+
 .mainView {
     position: absolute;
     top: 0;
@@ -24,26 +28,26 @@
 }
 
 .mainView {
-  background: #5497c4;
-  background: -moz-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #EFEFEF), color-stop(100%, #5497c4));
-  background: -webkit-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
-  background: -o-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
-  background: -ms-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
-  background: radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
-  background-color: #2b2b2b;
+    background: #5497c4;
+    background: -moz-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #EFEFEF), color-stop(100%, #5497c4));
+    background: -webkit-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
+    background: -o-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
+    background: -ms-radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
+    background: radial-gradient(center, circle cover, #EFEFEF 0%, #5497c4 100%);
+    background-color: #2b2b2b;
 }
 
 
 .mainView.red {
-	  background: #4586b2;
-	  background: -moz-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
-	  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #EFEFEF), color-stop(100%, #4586b2));
-	  background: -webkit-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
-	  background: -o-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
-	  background: -ms-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
-	  background: radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
-	  background-color: #2b2b2b;
+    background: #4586b2;
+    background: -moz-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #EFEFEF), color-stop(100%, #4586b2));
+    background: -webkit-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+    background: -o-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+    background: -ms-radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+    background: radial-gradient(center, circle cover, #EFEFEF 0%, #4586b2 100%);
+    background-color: #2b2b2b;
 }
 
 .mainView.current {
