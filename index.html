@@ -13,7 +13,7 @@ and open the template in the editor.
         
         <!-- CSS Main view -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/cv.css">
+        <link rel="stylesheet" type="text/css" href="css/cv.css" media="all">
         
         <!-- CSS for reveal.js -->
         <link rel="stylesheet" href="vendor/reveal.js.git/css/reveal.css">
@@ -25,11 +25,12 @@ and open the template in the editor.
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="vendor/reveal.js.git/lib/css/zenburn.css">
 
-        
+        <!-- Printing CSS -->
+        <!--<link rel="stylesheet" type="text/css" href="css/print.css" media="all">-->
         
     </head>
     <body>
-        <div class="meny">
+        <div class="meny no-print">
             <a href="#" onclick="resume.goToView('coverLetter'); meny.close(); codix.stop();">Cover Letter</a>
             <a href="#" onclick="resume.goToView('main'); meny.close(); codix.start();">Main</a>
             <a href="#" onclick="resume.goToView('awesomeSlides'); meny.close(); codix.stop();">Slides</a>
@@ -37,7 +38,7 @@ and open the template in the editor.
         </div>
         <div class="contents">
             
-            <div class="mainView current">
+            <div class="mainView current no-print">
                 <div class="playContainer">
                     <div class="playBtn"></div>
                     <img src="img/avatar_only.png" class="myAvatar">
@@ -47,8 +48,13 @@ and open the template in the editor.
             <div class="cv">
                 
                 <header>
+                    <div class = "wrapperName">
+                        <div class = "wrapper">
+                            <h1 class="name">Carlos Baraza</h1>
+                        </div>
+                    </div>
+
                     <div class = "wrapper">
-                        <h1 class="name">Carlos Baraza</h1>
                         <img class="picture" src="img/Foto_500.jpg">
 
                         <article>
@@ -167,7 +173,7 @@ and open the template in the editor.
                 
             </div>
 
-            <div class="reveal">
+            <div class="reveal no-print">
 
                     <!-- Any section element inside of this container is displayed as a slide -->
                     <div class="slides">

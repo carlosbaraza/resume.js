@@ -61,7 +61,7 @@ Codix.Line = function () {
     this.yPos = Math.random() * 60 - 20 + '%';
     
     // Stop control
-    this.isStopped = 1;
+    this.isStopped = 0;
     
     // Speed of falling
     this.slowness = Math.random();
